@@ -12,7 +12,6 @@ public class Reload : MonoBehaviour
             Debug.Log(counter);
             counter--;
             Destroy(this.gameObject);
-
         }
         
     }
