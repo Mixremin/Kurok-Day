@@ -50,6 +50,7 @@ MonoBehaviour:
   bulletSpeed: 15
   _rb: {fileID: 2031309174447971563}
   HideManager: {fileID: 6610205109000139051, guid: f3901115d4062524b85f3541117f2d8a, type: 3}
+  pfTakeBullet: {fileID: 5786796695717465118, guid: bad656ea97d79d14fb2fce25630126f9, type: 3}
 --- !u!135 &6067091422868843748
 SphereCollider:
   m_ObjectHideFlags: 0
