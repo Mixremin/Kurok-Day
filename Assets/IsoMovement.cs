@@ -7,6 +7,7 @@ public class IsoMovement : MonoBehaviour
     [SerializeField] private Rigidbody _rb;
     [SerializeField] private float speed = 5.0f;
     [SerializeField] private float turnSpeed = 720;
+
     private Vector3 Keys;
 
     void Start() {
@@ -23,11 +24,10 @@ public class IsoMovement : MonoBehaviour
         Move();
     }
 
-
     void Orient() {
         if (Keys != Vector3.zero) {
             
-            var matrix = Matrix4x4.Rotate(Quaternion.Euler(0,45,0));
+            var matrix = Matrix4x4.Rotate(Quaternion.Euler(0,135,0));
             var skewedInput = matrix.MultiplyPoint3x4(Keys);
 
             var relative = (transform.position + skewedInput) - transform.position;

@@ -13,11 +13,15 @@ public class PlatePress : MonoBehaviour
     }
     // Start is called before the first frame update
     private void OnCollisionEnter(Collision other) {
-        pressed = true;
-        DoorManager.GetComponent<DoorManager>().SetState(id, pressed);
+        if(other.transform.CompareTag("Box")) {
+            pressed = true;
+            DoorManager.GetComponent<DoorManager>().SetState(id, pressed);
+        }
     }
     private void OnCollisionExit(Collision other) {
-        pressed = false;
-        DoorManager.GetComponent<DoorManager>().SetState(id, pressed);
+        if(other.transform.CompareTag("Box")) {
+            pressed = false;
+            DoorManager.GetComponent<DoorManager>().SetState(id, pressed);
+        }
     }
 }

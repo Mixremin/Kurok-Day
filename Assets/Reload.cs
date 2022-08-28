@@ -9,7 +9,7 @@ public class Reload : MonoBehaviour
 
     void Start() {
         if (counter > 0) {
-            Debug.Log(counter);
+            //Debug.Log(counter);
             counter--;
             Destroy(this.gameObject);
         }

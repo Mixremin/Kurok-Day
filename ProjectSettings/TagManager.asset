@@ -6,11 +6,15 @@ TagManager:
   tags:
   - Destroyable
   - UnDest
+  - Shovel
+  - Zaval
+  - Door
+  - Box
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Destroyable
   - Water
   - UI
   - 

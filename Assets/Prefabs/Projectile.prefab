@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 8593256045639350733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.7076073, y: -10.135376, z: -2.88}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8593256046806345506}
@@ -49,7 +49,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 15
   _rb: {fileID: 2031309174447971563}
-  HideManager: {fileID: 6610205109000139051, guid: f3901115d4062524b85f3541117f2d8a, type: 3}
+  HideManager: {fileID: 0}
+  InventoryManager: {fileID: 0}
   pfTakeBullet: {fileID: 5786796695717465118, guid: bad656ea97d79d14fb2fce25630126f9, type: 3}
 --- !u!135 &6067091422868843748
 SphereCollider:

@@ -6,6 +6,7 @@ public class ShootingStar : MonoBehaviour
 {
     [SerializeField] private GameObject Projectile;
     [SerializeField] private GameObject HideManager;
+    [SerializeField] private GameObject ShotPoint;
     [SerializeField] private bool HaveBullet = true;
     // Update is called once per frame
     void Awake() {
@@ -27,11 +28,11 @@ public class ShootingStar : MonoBehaviour
             if (Input.GetButtonDown("Fire1")) 
             {
                 Vector3 StartPos = transform.position + transform.forward;
-                GameObject bulletTrans = Instantiate(Projectile, StartPos, transform.rotation);
+                GameObject bulletTrans = Instantiate(Projectile, ShotPoint.transform.position, transform.rotation);
 
                 bulletTrans.GetComponent<ProjPhysics>().Setup();
                 HaveBullet = false;
-                Destroy(bulletTrans, 2);
+                //Destroy(bulletTrans, 2);
             }
         }
     }
