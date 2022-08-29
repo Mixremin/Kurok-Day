@@ -10,6 +10,8 @@ TagManager:
   - Zaval
   - Door
   - Box
+  - Key
+  - Arti
   layers:
   - Default
   - TransparentFX
